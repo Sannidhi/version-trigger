@@ -1,0 +1,9 @@
+applications:
+- name: version-trigger
+  instances: 1
+  memory: 1024M
+  disk_quota: 1024M
+  no-route: true
+  stack: cflinuxfs2
+  command: bundle exec ruby run.rb
+  health-check-type: none
